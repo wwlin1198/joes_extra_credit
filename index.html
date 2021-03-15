@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <meta name ="author" content="Willy (Wo Wei) Lin">
+        <title style="color: brown;">Joe's Hotdogs</title>
+
+        <style>
+            *{
+                margin: 0%;
+                padding: 0%;
+            }
+            h1{
+                font-family: 'Big Shoulders Inline Display';
+                text-shadow: 0 0 5px black;
+                color: #380700;
+                font-size: 100px;
+                margin-right: 50%;
+                opacity: 80%;
+            }
+            .main-body {
+                background-image: linear-gradient(#ebd8bc, #ebe8e8);
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+            header {
+                background-image: url(images/hotdog.jpg);
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+                width: 100%;
+                height: 20%;
+            }
+            .main {
+                background-image: linear-gradient(#bb8029, #ebe8e8);
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+                width: 100%;
+                height: 100vh;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="main">
+            <header>
+                <h1> Joe's Hotdogs</h1>
+            </header>
+            <div class="main-body">
+                <div id="myTable"></div>
+                <script src="hotdogs.js"></script>
+                <form name = "items">
+                    <br/>
+                    Number of Hotdogs $3.25ea:<br>
+                    <select name="hotdogs" id="num1">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                    </select><br><br>
+                    Number of French Fries $2.00ea:<br>                    
+                    <select name="french_fries" id="num2">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                    </select><br><br>
+                    Number of Drinks $1.50ea:<br>                    
+                    <select name="drinks" id="num3">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                    </select><br><br>
+                    <input type="button" value="Click to Checkout!" onclick="calculate_total()"><br>
+                </form> 
+            </div>
+        </div>
+
+    </body>
+</html>
